@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+/* Bright Industrial Theme Configuration */
+:root {
+  /* Base: Off-White / Clean */
+  --background: 0 0% 100%;
+  /* #FFFFFF */
+  --foreground: 220 10% 10%;
+  /* Dark Grey Text */
+
+  /* Cards: White with soft borders */
+  --card: 0 0% 100%;
+  --card-foreground: 220 10% 10%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 10% 10%;
+
+  /* Primary: Titan Industrial Yellow #F7B500 (HSL: 44, 100%, 48%) */
+  --primary: 44 100% 48%;
+  --primary-foreground: 220 10% 10%;
+  /* Dark text on yellow */
+
+  /* Secondary: Steel Silver #D9DCE0 (HSL: 214, 9%, 86%) */
+  --secondary: 214 9% 86%;
+  --secondary-foreground: 220 10% 20%;
+
+  /* Muted: Warm Grey #F2F3F5 */
+  --muted: 210 10% 96%;
+  --muted-foreground: 220 10% 40%;
+
+  /* Accent: Deep Industrial Blue #1959A8 (HSL: 213, 74%, 38%) */
+  /* Used for hover states, active items */
+  --accent: 213 74% 38%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 220 13% 91%;
+  /* Light grey borders */
+  --input: 220 13% 91%;
+  --ring: 213 74% 38%;
+  /* Focus ring is Blue */
+
+  --radius: 0rem;
+  /* Sharp industrial edges */
+
+  --chart-1: 44 100% 48%;
+  --chart-2: 213 74% 38%;
+  --chart-3: 214 9% 86%;
+  --chart-4: 220 10% 10%;
+  --chart-5: 0 0% 60%;
+}
+
+/* Force Light Mode structure even if system prefers dark */
+.dark {
+  /* In this revamp, we map dark to the same light theme or a very subtle dim */
+  --background: 0 0% 98%;
+  --foreground: 220 10% 10%;
+  /* Kept similar to light to enforce the "No Dark Backgrounds" rule */
+  --card: 0 0% 100%;
+  --card-foreground: 220 10% 10%;
+  --primary: 44 100% 48%;
+  --primary-foreground: 220 10% 10%;
+  --secondary: 214 9% 86%;
+  --secondary-foreground: 220 10% 20%;
+  --muted: 210 10% 94%;
+  --muted-foreground: 220 10% 40%;
+  --accent: 213 74% 38%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 13% 85%;
+  --input: 220 13% 85%;
+  --ring: 213 74% 38%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Lenis Smooth Scroll Recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
