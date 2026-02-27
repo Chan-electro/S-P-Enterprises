@@ -1,0 +1,96 @@
+# S.P. Enterprises Website Development Prompt
+
+## 1. Project Overview
+Build a premium, high-performance website for **S.P. Enterprises**, a leading manufacturer and supplier of heavy earthmoving equipment spares and precision components. 
+
+**Client Tone**: Professional, Industrial, Advanced Technology, Reliable (30+ years experience).
+**Visual Style**: Dark, premium industrial aesthetic (using the color palette and fonts specified below).
+
+## 2. Tech Stack Requirements
+- **Framework**: React (Vite)
+- **Styling**: Tailwind CSS (v4 or v3 with standard config)
+- **UI Library**: shadcn/ui (Cards, Buttons, Badges, Avatars)
+- **Animations**: Framer Motion, @paper-design/shaders-react
+- **Icons**: Lucide React
+
+## 3. Design System & Global Styles
+Implement the following in your `index.css`:
+- **Fonts**: 
+  - Headings: `Instrument Serif` (e.g., "Beautiful Shader Experiences" style)
+  - Body: `Inter`
+- **Colors (Dark Theme Focus)**:
+  - Backgrounds: `#09090b` (Main), `#18181b` (Secondary)
+  - Text: `#fafafa` (Primary), `#a1a1aa` (Muted)
+  - Accents: Use the oranges/industrial tones found in the content or match the premium shader vibes.
+- **Global CSS**:
+  ```css
+  :root {
+    --bg-0: #09090b;
+    --text-100: #fafafa;
+    /* ... include the theme variables from the components file */
+  }
+  ```
+
+## 4. Component Implementation Strategy
+Use the provided components to construct the key sections. **Do not modify the core logic of the components, but DO update the content (text/images) to match S.P. Enterprises.**
+
+### A. Home Page
+1.  **Hero Section**: Use the **`ResponsiveHeroBanner`** component.
+    -   **Background Image**: Use a high-quality industrial image (heavy machinery/excavator).
+    -   **Badge**: "Established 1995" | "ISO Certified" (or similar trust signal).
+    -   **Title**: "Journey Beyond Earth" -> **"Powering Construction"** or **"Precision & Performance"**.
+    -   **Subtitle**: "Into the Cosmos" -> **"Since 1995"**.
+    -   **Description**: "We Serve All Brands Of Excavators, Backhoe loaders, Loaders, Cranes and RMCs."
+    -   **Buttons**: "Explore Products" (Primary), "Contact Us" (Secondary).
+    -   **Partners/Brands**: Update logos to Caterpillar, Komatsu, Hitachi, Volvo, Hyundai (as listed in content).
+
+2.  **Introduction/About Teaser**:
+    -   Use the **`Hero Dithering Card` (CTASection)** as a transition or "About Us" highlight.
+    -   **Headline**: "Your words, delivered perfectly" -> **"Precision Components, Delivered Globally."**
+    -   **Description**: "Specialized in precision components manufacture... customized to your specifications."
+
+### B. Infrastructure & Capabilities
+*This is a key section. Use the **Bento Grid** to make it visual.*
+
+1.  **Component**: Use **`BentoGridShowcase`**.
+2.  **Mapping**:
+    -   **Main Feature (Tall Card)**: **"State-of-the-Art Facility"** (Image of CNC/Factory).
+    -   **Secondary Feature**: **"Custom Manufacturing"** (Gears/Shafts).
+    -   **Statistic**: **"30+ Years"** Experience or **"<10 Microns"** Accuracy.
+    -   **Tags**: "CNC Turning", "Gear Hobbing", "Induction Hardening".
+    -   **Integrations/Brands**: Show brand compatibility (JCB, CAT, etc.).
+
+### C. Products Page
+Create a clean grid layout (using standard Tailwind/Cards) for the product categories:
+1.  **SPE Products**: Undercarriage systems, Replacement parts.
+2.  **ASTECH Products** (Manufacturing): Gears, Bushes, Pins, Shafts, Cylinders.
+3.  **Undercarriage Products**: Track Rollers, Sprockets, Idlers.
+
+*Tip: Use the `Card` component from shadcn for individual items.*
+
+### D. Contact Page
+Use the **`ShaderBackground`** component to wrap the Contact section or Header to give it a unique, futuristic feel suitable for "Advanced Technology."
+-   **Content**:
+    -   Head Offices (Bangalore locations).
+    -   Key Contacts (Mr. H.S. Shivanandaswamy, etc.).
+    -   Distribution Network (Salem, Coimbatore, Cochin, Hospet).
+-   **Form**: First Name, Phone, Email, Message.
+
+## 5. Content Data (Reference)
+*Refer to the `refined-webpage-content.txt` file for all text.*
+
+-   **Missions**: "Creating a good future with advanced technology..."
+-   **Key Differentiators**: Advanced production technology, Custom manufacturing.
+-   **Locations**: 
+    -   HO1: #5 HMT Factory Main Road, Bangalore.
+    -   HO2: #66/2, 5th Cross, Sharadhamba Nagar, Bangalore.
+
+## 6. Execution Instructions
+1.  Initialize the project with `shadcn` and `framer-motion`.
+2.  Install dependencies: `lucide-react`, `@paper-design/shaders-react`, `framer-motion`.
+3.  Create the `components/ui` folder and add `bento-grid.tsx`, `responsive-hero-banner.tsx`, `hero-dithering-card.tsx`, `shaders-hero-section.tsx`.
+4.  Scaffold the pages: `Home`, `About`, `Infrastructure`, `Products`, `Contact`.
+5.  Assemble the pages using the strategy above.
+6.  Ensure all text matches the provided content file EXACTLY where applicable.
+
+**Output**: A fully functional, visually stunning website matching the client's "Favorite Design" (the provided components) with their actual business content.

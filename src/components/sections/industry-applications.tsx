@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
@@ -17,14 +17,22 @@ const industries = [
 export default function IndustryApplications() {
     const sectionRef = useRef<HTMLElement>(null);
     const triggerRef = useRef<HTMLDivElement>(null);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
+
+    useEffect(() => {
+        if (isMobile) return; // No horizontal scroll on mobile
+
         const ctx = gsap.context(() => {
-            const pin = gsap.fromTo(
+            gsap.fromTo(
                 sectionRef.current,
-                {
-                    translateX: 0,
-                },
+                { translateX: 0 },
                 {
                     translateX: "-300vw",
                     ease: "none",
@@ -41,11 +49,40 @@ export default function IndustryApplications() {
             );
         }, triggerRef);
         return () => ctx.revert();
-    }, []);
+    }, [isMobile]);
 
+    // Mobile: vertical stacking
+    if (isMobile) {
+        return (
+            <div className="bg-black py-16 px-4">
+                <div className="max-w-lg mx-auto mb-12">
+                    <h2 className="text-3xl sm:text-4xl font-display font-black uppercase text-white mb-4">
+                        Industries We <span className="text-primary">Serve</span>
+                    </h2>
+                    <p className="text-base text-gray-400">
+                        From construction sites to mining operations, S.P. Enterprises keeps your equipment running.
+                    </p>
+                </div>
+                <div className="space-y-6 max-w-lg mx-auto">
+                    {industries.map((ind, i) => (
+                        <div key={i} className="relative rounded-sm overflow-hidden aspect-video">
+                            <img src={ind.img} alt={ind.name} className="absolute inset-0 w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-black/50" />
+                            <div className="absolute bottom-0 left-0 p-6 z-10">
+                                <h3 className="text-2xl font-display font-black text-white uppercase mb-2">{ind.name}</h3>
+                                <p className="text-sm text-white/80 border-l-4 border-primary pl-4">{ind.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+
+    // Desktop: horizontal scroll
     return (
-        <div className="overflow-hidden bg-black pb-24"> {/* Added bg-black and padding */}
-            <div ref={triggerRef} className="h-screen w-full"> {/* Pin wrapper */}
+        <div className="overflow-hidden bg-black pb-24">
+            <div ref={triggerRef} className="h-screen w-full">
                 <div ref={sectionRef as any} className="flex h-screen w-[400vw] relative will-change-transform">
 
                     {/* Intro Slide */}

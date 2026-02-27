@@ -40,10 +40,10 @@ export default function FeaturedMachinery() {
     return (
         <section className="py-24 bg-neutral-50">
             <div className="container mx-auto px-6">
-                <div className="flex justify-between items-end mb-16">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-16">
                     <div>
                         <span className="text-primary font-bold uppercase tracking-widest text-sm block mb-2">Our Offerings</span>
-                        <h2 className="text-4xl md:text-5xl font-display font-black text-black uppercase">Featured Products</h2>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-black uppercase">Featured Products</h2>
                     </div>
                     <Link href="/products" className="hidden md:block">
                         <Button variant="link" className="text-black font-bold text-lg group">
@@ -73,7 +73,7 @@ export default function FeaturedMachinery() {
                                 </div>
 
                                 <div className="p-8">
-                                    <h3 className="text-2xl font-display font-black text-black uppercase mb-4 group-hover:text-primary transition-colors">{machine.name}</h3>
+                                    <h3 className="text-xl sm:text-2xl font-display font-black text-black uppercase mb-4 group-hover:text-primary transition-colors">{machine.name}</h3>
 
                                     <div className="grid grid-cols-3 gap-4 border-t border-neutral-100 pt-6">
                                         <div className="text-center">
@@ -99,7 +99,7 @@ export default function FeaturedMachinery() {
                 </div>
 
                 <div className="mt-12 text-center md:hidden">
-                    <Link href="/machinery">
+                    <Link href="/products">
                         <Button size="lg" className="w-full bg-black text-white rounded-none">View Full Catalog</Button>
                     </Link>
                 </div>

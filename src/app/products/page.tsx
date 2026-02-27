@@ -15,9 +15,10 @@ export default function ProductsPage() {
             {/* Header */}
             <div className="container mx-auto px-6 mb-16">
                 <div className="max-w-4xl">
-                    <h1 className="text-4xl md:text-6xl font-display font-black text-black uppercase mb-4">Products & Services</h1>
+                    <Badge variant="outline" className="mb-4 border-primary text-primary font-bold uppercase tracking-widest">SPE &amp; ASTECH</Badge>
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-black uppercase mb-4">Products &amp; Services</h1>
                     <p className="text-xl text-neutral-600">
-                        From custom precision components to complete undercarriage systems for all major brands.
+                        From custom precision components to complete undercarriage systems. Serving Caterpillar, Komatsu, Hitachi, Volvo &amp; Hyundai.
                     </p>
                 </div>
             </div>
@@ -32,7 +33,7 @@ export default function ProductsPage() {
                         <div className="flex flex-col md:flex-row gap-8 md:items-center mb-8 pb-4 border-b border-neutral-200">
                             <div className="flex-1">
                                 <Badge variant="outline" className="mb-2 border-primary text-primary font-bold">Manufacturing Division</Badge>
-                                <h2 className="text-3xl font-display font-black text-black uppercase">A.S. TECH PRODUCTS</h2>
+                                <h2 className="text-2xl sm:text-3xl font-display font-black text-black uppercase">A.S. TECH PRODUCTS</h2>
                             </div>
                             <div className="md:w-1/3">
                                 <p className="text-neutral-500 text-sm">Custom manufactured precision components made strictly according to customer samples or drawings.</p>
@@ -66,7 +67,7 @@ export default function ProductsPage() {
                         <div className="flex flex-col md:flex-row gap-8 md:items-center mb-8 pb-4 border-b border-neutral-200">
                             <div className="flex-1">
                                 <Badge variant="outline" className="mb-2 border-primary text-primary font-bold">Stockist & Supply</Badge>
-                                <h2 className="text-3xl font-display font-black text-black uppercase">Undercarriage Products</h2>
+                                <h2 className="text-2xl sm:text-3xl font-display font-black text-black uppercase">Undercarriage Products</h2>
                             </div>
                             <div className="md:w-1/3">
                                 <p className="text-neutral-500 text-sm">Complete range of undercarriage parts for Komatsu, Hitachi, Kobelco, Caterpillar, Hyundai, Volvo, and more.</p>
@@ -102,7 +103,7 @@ export default function ProductsPage() {
                         <div className="bg-primary/5 border border-primary/20 rounded-sm p-8 md:p-12">
                             <div className="flex flex-col md:flex-row items-center gap-8">
                                 <div className="flex-1">
-                                    <h2 className="text-3xl font-display font-black text-black uppercase mb-4">SPE Genuine Spares</h2>
+                                    <h2 className="text-2xl sm:text-3xl font-display font-black text-black uppercase mb-4">SPE Genuine Spares</h2>
                                     <p className="text-neutral-600 mb-6 text-lg">
                                         We are specialized in importing and stocking genuine spares for heavy earthmoving equipment under the name M/s SP Enterprises.
                                     </p>

@@ -4,8 +4,8 @@ import { Users, Hammer, Globe, Trophy, Building2, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Us | S.P. Enterprises',
-    description: 'Established in 1995. precision components manufacturer and heavy earthmoving equipment spares supplier.',
+    title: '30+ Years of Manufacturing Excellence | S.P. Enterprises',
+    description: 'Established in 1995 - precision components manufacturer and heavy earthmoving equipment spares supplier in Bangalore.',
 };
 
 export default function AboutPage() {
@@ -16,10 +16,10 @@ export default function AboutPage() {
                 <img src="/images/factory-floor.png" alt="S.P. Enterprises Factory" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-white/80" />
                 <div className="relative z-10 text-center max-w-4xl px-4">
-                    <Badge variant="outline" className="mb-4 text-black border-black font-bold uppercase tracking-widest bg-white/50 backdrop-blur-sm">Since 1995</Badge>
-                    <h1 className="text-4xl md:text-6xl font-display font-black text-black uppercase mb-6 drop-shadow-sm">Precision & Power</h1>
-                    <p className="text-xl md:text-2xl text-neutral-600 font-medium max-w-2xl mx-auto">
-                        "Create a good future with advanced technology, excellent quality, and top-grade service."
+                    <Badge variant="outline" className="mb-4 text-black border-black font-bold uppercase tracking-widest bg-white/50 backdrop-blur-sm">Est. 1995</Badge>
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-black uppercase mb-6 drop-shadow-sm">Engineering the Future of Earth Moving</h1>
+                    <p className="text-base sm:text-xl md:text-2xl text-neutral-600 font-medium max-w-2xl mx-auto">
+                        3 decades of expertise. Pan-India network. Global quality standards.
                     </p>
                 </div>
             </section>
@@ -38,7 +38,7 @@ export default function AboutPage() {
                                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
                                     <stat.icon className="w-6 h-6" />
                                 </div>
-                                <div className="text-4xl font-display font-black text-black mb-1">{stat.value}</div>
+                                <div className="text-2xl sm:text-4xl font-display font-black text-black mb-1">{stat.value}</div>
                                 <div className="text-sm font-bold text-neutral-500 uppercase tracking-wide">{stat.label}</div>
                             </div>
                         ))}
@@ -53,14 +53,14 @@ export default function AboutPage() {
                         <div>
                             <h2 className="text-3xl font-display font-black text-black uppercase mb-6">Company Overview</h2>
                             <p className="text-neutral-600 text-lg mb-6 leading-relaxed">
-                                S.P. Enterprises, established in 1995 under the leadership of Mr. H.S. Shivanandaswamy, specializes in precision components manufacture and heavy earth moving spare parts.
+                                Established in 1995 under the visionary leadership of Mr. H.S. Shivanandaswamy, S.P. Enterprises has evolved from a precision workshop into a premier manufacturer and stockist of heavy earthmoving equipment spares.
                             </p>
                             <p className="text-neutral-600 text-lg mb-6 leading-relaxed">
                                 We operate as a manufacturer, importer, and stockist for genuine spares. Our facility is equipped with advanced production technology including CNC Turning Centers, Gear Hobbing, and Induction Hardening machines.
                             </p>
                             <div className="bg-neutral-50 p-6 rounded-sm border-l-4 border-primary">
                                 <h3 className="font-bold text-black mb-2">Our Mission</h3>
-                                <p className="text-neutral-600 italic">"To create a good future with advanced technology, excellent quality, and top-grade service by hand in hand with business people in our homeland."</p>
+                                <p className="text-neutral-600 italic">"To create a robust future through advanced technology, excellent quality, and top-grade service—hand in hand with our partners."</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-1 gap-6">

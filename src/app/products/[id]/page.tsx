@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     if (!part) return { title: 'Not Found' };
 
     return {
-        title: `${part.name} | TitanX Parts`,
+        title: `${part.name} | S.P. Enterprises Parts`,
         description: `Official specification for ${part.name}.`,
     };
 }

@@ -46,10 +46,10 @@ export default function InfrastructurePage() {
         <div className="min-h-screen bg-white pt-24 pb-12">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto text-center mb-16">
-                    <Badge variant="outline" className="mb-4 border-primary text-primary font-bold uppercase tracking-widest">Manufacturing Excellence</Badge>
-                    <h1 className="text-4xl md:text-5xl font-display font-black text-black uppercase mb-6">Infrastructure</h1>
+                    <Badge variant="outline" className="mb-4 border-primary text-primary font-bold uppercase tracking-widest">State-of-the-Art Facility</Badge>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-black uppercase mb-6">Where Technology Meets Craftsmanship</h1>
                     <p className="text-xl text-neutral-600">
-                        Our facility is equipped with latest technology machines ensuring high precision and quality output for heavy earthmoving spares.
+                        CNC Turning & Machining Centers delivering accuracy &lt;10 microns. Custom manufacturing based on your samples and drawings.
                     </p>
                 </div>
 
@@ -59,7 +59,7 @@ export default function InfrastructurePage() {
                             <div className="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-black transition-colors">
                                 <Settings className="w-6 h-6" />
                             </div>
-                            <h3 className="text-2xl font-bold text-black mb-3">{cap.title}</h3>
+                            <h3 className="text-xl sm:text-2xl font-bold text-black mb-3">{cap.title}</h3>
                             <p className="text-neutral-500 mb-6">{cap.desc}</p>
                             <ul className="space-y-2">
                                 {cap.specs.map((spec, j) => (

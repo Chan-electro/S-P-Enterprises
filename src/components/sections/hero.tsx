@@ -58,7 +58,7 @@ export default function HeroSection() {
                 <img
                     ref={bgRef}
                     src="/images/hero-excavator.png"
-                    alt="TitanX TX-9000 Excavator"
+                    alt="S.P. Enterprises SPE-9000 Excavator"
                     className="w-full h-[120%] object-cover object-center"
                 />
                 {/* Subtle Overlay to ensure text readability without being dark */}
@@ -68,32 +68,32 @@ export default function HeroSection() {
             <div className="container mx-auto px-6 relative z-10 pt-20">
                 <div ref={textRef} className="max-w-3xl">
                     <div className="overflow-hidden mb-2">
-                        <h2 className="hero-text-line text-primary font-bold tracking-widest uppercase mb-4 text-sm md:text-base">
-                            S.P. ENTERPRISES
-                        </h2>
+                        <p className="hero-text-line text-primary font-bold tracking-widest uppercase mb-4 text-xs sm:text-sm md:text-base">
+                            ISO Certified Manufacturing • Est. 1995
+                        </p>
                     </div>
                     <div className="overflow-hidden mb-4">
-                        <h1 className="hero-text-line text-4xl md:text-6xl lg:text-7xl font-display font-black text-black leading-[1.1] tracking-tighter uppercase">
-                            We Serve All Brands Of <br />
-                            <span className="text-secondary-foreground">Earth Moving</span> <br />
-                            Equipments & Spares
+                        <h1 className="hero-text-line text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-black text-black leading-[1.1] tracking-tighter uppercase">
+                            Powering Machineries <br />
+                            <span className="text-secondary-foreground">With Precision</span> <br />
+                            Since 1995
                         </h1>
                     </div>
 
                     <div className="overflow-hidden mb-8">
-                        <p className="hero-text-line text-lg md:text-xl text-neutral-600 font-medium max-w-xl leading-relaxed">
-                            All Kind of High Performance Earth Moving Equipments & Spares. Excavators, Backhoe loaders, Loaders, Cranes and RMCs.
+                        <p className="hero-text-line text-base sm:text-lg md:text-xl text-neutral-600 font-medium max-w-xl leading-relaxed">
+                            Your trusted partner for high-performance earthmoving equipment spares and custom precision components. Serving Caterpillar, Komatsu, Hitachi, Volvo & Hyundai.
                         </p>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 hero-btn">
                         <Link href="/products">
-                            <Button size="lg" className="bg-primary text-black hover:bg-yellow-400 text-lg px-8 py-6 rounded-none font-bold shadow-lg shadow-yellow-500/20">
+                            <Button size="lg" className="bg-primary text-black hover:bg-yellow-400 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-none font-bold shadow-lg shadow-yellow-500/20">
                                 Explore Products <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </Link>
                         <Link href="/contact">
-                            <Button size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white text-lg px-8 py-6 rounded-none font-bold bg-transparent">
+                            <Button size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-none font-bold bg-transparent">
                                 Get a Quote
                             </Button>
                         </Link>

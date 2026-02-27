@@ -7,8 +7,8 @@ import { MapPin, Phone, Mail, User } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact Us | S.P. Enterprises',
-    description: 'Get in touch with S.P. Enterprises and A.S. Tech Industries. Headquartered in Bangalore with distribution across South India.',
+    title: 'Get a Quote for Earth Moving Spares | S.P. Enterprises Bangalore',
+    description: 'Contact S.P. Enterprises and A.S. Tech Industries for quotes, custom manufacturing, and distribution inquiries. Locations in Bangalore, Salem, Coimbatore, Cochin, and Hospet.',
 };
 
 export default function ContactPage() {
@@ -17,9 +17,9 @@ export default function ContactPage() {
             <div className="container mx-auto px-6">
 
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h1 className="text-5xl font-display font-black text-black mb-6 uppercase">Contact Us</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-black mb-6 uppercase">Let's Build Together</h1>
                     <p className="text-neutral-500 text-lg">
-                        Get in touch for inquiries about manufacturing, spare parts, or dealership opportunities.
+                        Reach out for quotes, custom orders, or distribution inquiries. Our team is ready to assist you.
                     </p>
                 </div>
 
@@ -105,7 +105,7 @@ export default function ContactPage() {
                         <Card className="p-8 border-none shadow-lg bg-white">
                             <h2 className="text-2xl font-display font-black text-black mb-6 uppercase">Get A Free Quote!</h2>
                             <form className="space-y-4">
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div className="space-y-1">
                                         <label className="text-xs font-bold text-neutral-500 uppercase">First Name</label>
                                         <Input placeholder="John" className="bg-neutral-50 border-neutral-200" />

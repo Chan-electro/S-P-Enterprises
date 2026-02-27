@@ -39,7 +39,7 @@ export default function Header() {
                     <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center font-black text-black text-xl tracking-tighter shadow-lg group-hover:scale-105 transition-transform">
                         SP
                     </div>
-                    <span className={`font-display font-black text-2xl tracking-tight uppercase ${isScrolled ? 'text-black' : 'text-black'}`}>
+                    <span className={`font-display font-black text-lg sm:text-2xl tracking-tight uppercase ${isScrolled ? 'text-black' : 'text-black'}`}>
                         S.P.<span className="text-primary">ENTERPRISES</span>
                     </span>
                 </Link>
@@ -128,7 +128,7 @@ export default function Header() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 right-0 bg-white border-b border-border shadow-xl p-6 lg:hidden"
+                        className="absolute top-full left-0 right-0 bg-white border-b border-border shadow-xl p-6 lg:hidden max-h-[80vh] overflow-y-auto"
                     >
                         <nav className="flex flex-col gap-4">
                             <Link href="/" className="text-lg font-bold text-neutral-800" onClick={() => setMobileMenuOpen(false)}>Home</Link>

@@ -34,12 +34,12 @@ const features = [
     },
 ];
 
-export default function WhyTitanX() {
+export default function WhySPEnterprises() {
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-4xl font-display font-black text-black uppercase mb-4">Business Highlights</h2>
+                    <h2 className="text-3xl sm:text-4xl font-display font-black text-black uppercase mb-4">Why S.P. Enterprises?</h2>
                     <p className="text-neutral-500 text-lg">Leading the industry with advanced technology and excellent quality since 1995.</p>
                 </div>
 
@@ -61,7 +61,7 @@ export default function WhyTitanX() {
                                 <feature.icon className="w-6 h-6" />
                             </div>
 
-                            <h3 className="text-2xl font-display font-bold text-black mb-2">{feature.title}</h3>
+                            <h3 className="text-xl sm:text-2xl font-display font-bold text-black mb-2">{feature.title}</h3>
                             <p className="text-neutral-500 leading-relaxed">{feature.desc}</p>
                         </motion.div>
                     ))}

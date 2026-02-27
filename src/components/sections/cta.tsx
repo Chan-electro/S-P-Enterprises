@@ -11,12 +11,12 @@ export default function CTASection() {
             </div>
 
             <div className="container mx-auto px-6 relative z-10 text-center">
-                <h2 className="text-4xl md:text-6xl font-display font-black text-black uppercase mb-6 drop-shadow-sm">
-                    Ready to Build the Future?
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-black uppercase mb-6 drop-shadow-sm">
+                    Precision Components. Global Standards.
                 </h2>
-                <p className="text-xl md:text-2xl text-black/80 max-w-2xl mx-auto mb-12 font-medium">
-                    Equip your fleet with the world's most reliable heavy machinery.
-                    Contact our engineering team today for a custom consultation.
+                <p className="text-base sm:text-xl md:text-2xl text-black/80 max-w-2xl mx-auto mb-12 font-medium">
+                    We don't just supply parts; we engineer reliability for the toughest terrains.
+                    Contact our team today for a custom consultation.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -25,9 +25,9 @@ export default function CTASection() {
                             Get a Quote <ArrowRight className="ml-2 w-5 h-5" />
                         </Button>
                     </Link>
-                    <Link href="/machinery">
+                    <Link href="/products">
                         <Button size="lg" variant="outline" className="border-2 border-black text-black hover:bg-white/50 text-lg px-8 py-6 rounded-none font-bold uppercase tracking-wide bg-transparent h-16 w-full sm:w-auto">
-                            Browse Full Catalog
+                            View Products
                         </Button>
                     </Link>
                 </div>
