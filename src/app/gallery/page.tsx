@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Gallery | S.P. Enterprises',
+    title: 'Gallery | YSP Spares',
     description: 'Showcasing our precision manufacturing facility, machinery, and finished components.',
 };
 

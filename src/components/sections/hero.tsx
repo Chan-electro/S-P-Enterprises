@@ -58,7 +58,7 @@ export default function HeroSection() {
                 <img
                     ref={bgRef}
                     src="/images/hero-excavator.png"
-                    alt="S.P. Enterprises SPE-9000 Excavator"
+                    alt="YSP Spares Heavy Equipment"
                     className="w-full h-[120%] object-cover object-center"
                 />
                 {/* Subtle Overlay to ensure text readability without being dark */}

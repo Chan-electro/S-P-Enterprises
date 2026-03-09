@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     if (!machine) return { title: 'Not Found' };
 
     return {
-        title: `${machine.name} | S.P. Enterprises`,
+        title: `${machine.name} | YSP Spares`,
         description: machine.description,
     };
 }
