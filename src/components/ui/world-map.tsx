@@ -5,12 +5,11 @@ import { MapPin } from "lucide-react";
 import { useState } from "react";
 
 const locations = [
-    { id: 1, name: "HQ - Pennsylvania", x: 28, y: 35 },
-    { id: 2, name: "Berlin Hub", x: 52, y: 28 },
-    { id: 3, name: "Tokyo Office", x: 85, y: 38 },
-    { id: 4, name: "Sydney Distribution", x: 88, y: 75 },
-    { id: 5, name: "Dubai Service", x: 60, y: 45 },
-    { id: 6, name: "Sao Paulo", x: 32, y: 70 },
+    { id: 1, name: "HQ - Bangalore", x: 72, y: 52 },
+    { id: 2, name: "Salem Office", x: 71, y: 56 },
+    { id: 3, name: "Coimbatore Office", x: 70, y: 58 },
+    { id: 4, name: "Cochin Office", x: 69, y: 60 },
+    { id: 5, name: "Hospet Office", x: 70, y: 50 },
 ];
 
 export default function WorldMap() {
@@ -18,16 +17,15 @@ export default function WorldMap() {
 
     return (
         <div className="relative w-full aspect-[2/1] bg-neutral-100 rounded-lg overflow-hidden">
-            {/* Abstract World Map SVG Background */}
+            {/* Abstract India Map SVG Background */}
             <svg className="absolute inset-0 w-full h-full opacity-10 pointer-events-none" viewBox="0 0 100 50">
                 <path d="M20,30 Q25,25 35,35 T50,30 T70,35 T90,30 V50 H0 V30 H20" fill="#000" />
-                {/* Simplified shapes for continents - abstract */}
-                <rect x="20" y="20" width="15" height="20" fill="#000" rx="2" /> {/* N. America */}
-                <rect x="25" y="45" width="10" height="15" fill="#000" rx="2" /> {/* S. America */}
-                <rect x="45" y="20" width="15" height="15" fill="#000" rx="2" /> {/* Europe */}
-                <rect x="48" y="40" width="15" height="15" fill="#000" rx="2" /> {/* Africa */}
-                <rect x="70" y="20" width="20" height="15" fill="#000" rx="2" /> {/* Asia */}
-                <rect x="80" y="60" width="10" height="10" fill="#000" rx="2" /> {/* Australia */}
+                <rect x="20" y="20" width="15" height="20" fill="#000" rx="2" />
+                <rect x="25" y="45" width="10" height="15" fill="#000" rx="2" />
+                <rect x="45" y="20" width="15" height="15" fill="#000" rx="2" />
+                <rect x="48" y="40" width="15" height="15" fill="#000" rx="2" />
+                <rect x="70" y="20" width="20" height="15" fill="#000" rx="2" />
+                <rect x="80" y="60" width="10" height="10" fill="#000" rx="2" />
             </svg>
 
             {/* Dynamic Dots */}
@@ -43,8 +41,8 @@ export default function WorldMap() {
                     onMouseLeave={() => setActiveLoc(null)}
                 >
                     <div className="relative">
-                        <MapPin className={`w-6 h-6 ${activeLoc === loc.id ? 'text-primary' : 'text-gray-500'} transition-colors`} />
-                        <div className={`absolute -bottom-1 -left-1 w-8 h-1 bg-black/50 blur-sm rounded-full`} />
+                        <MapPin className={`w-6 h-6 ${activeLoc === loc.id ? 'text-primary' : 'text-neutral-500'} transition-colors`} />
+                        <div className="absolute -bottom-1 -left-1 w-8 h-1 bg-black/50 blur-sm rounded-full" />
 
                         {/* Pulse effect */}
                         <div className="absolute inset-0 bg-primary/30 rounded-full animate-ping opacity-0 group-hover:opacity-100" />
@@ -63,7 +61,7 @@ export default function WorldMap() {
                 </motion.div>
             ))}
 
-            <div className="absolute bottom-4 left-4 text-xs text-gray-600">
+            <div className="absolute bottom-4 left-4 text-xs text-neutral-500">
                 * interactive dealer map
             </div>
         </div>

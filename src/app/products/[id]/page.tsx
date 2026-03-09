@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     if (!part) return { title: 'Not Found' };
 
     return {
-        title: `${part.name} | S.P. Enterprises Parts`,
+        title: `${part.name} | YSP Spares Parts`,
         description: `Official specification for ${part.name}.`,
     };
 }
@@ -34,7 +34,7 @@ export default async function PartDetailPage({ params }: { params: Promise<{ id:
             <div className="container mx-auto px-6">
 
                 {/* Breadcrumb */}
-                <Link href="/parts" className="inline-flex items-center text-neutral-500 hover:text-black mb-8 transition-colors font-medium">
+                <Link href="/products" className="inline-flex items-center text-neutral-500 hover:text-black mb-8 transition-colors font-medium">
                     <MoveLeft className="mr-2 h-4 w-4" /> Back to Catalog
                 </Link>
 
@@ -122,7 +122,7 @@ export default async function PartDetailPage({ params }: { params: Promise<{ id:
                         </div>
 
                         <div className="flex gap-4">
-                            <Button size="lg" className="flex-1 bg-black text-white font-bold hover:bg-neutral-800 rounded-none h-14 uppercase tracking-wide">
+                            <Button size="lg" className="flex-1 bg-primary text-black font-bold hover:bg-primary/90 rounded-none h-14 uppercase tracking-wide">
                                 Add to Order
                             </Button>
                             <Button size="lg" variant="outline" className="flex-1 border-neutral-200 hover:bg-neutral-50 text-black h-14">

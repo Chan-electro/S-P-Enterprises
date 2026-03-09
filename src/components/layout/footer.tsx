@@ -10,8 +10,8 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center font-black text-black text-lg">SP</div>
-                            <span className="font-display font-black text-xl uppercase tracking-tight">S.P.<span className="text-primary">ENTERPRISES</span></span>
+                            <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center font-black text-black text-sm">YSP</div>
+                            <span className="font-display font-black text-xl uppercase tracking-tight">YSP<span className="text-primary"> SPARES</span></span>
                         </div>
                         <p className="text-neutral-500 max-w-xs leading-relaxed">
                             Serving the industry since 1995 with precision components and genuine spares for heavy earthmoving equipment.
@@ -64,7 +64,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-neutral-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500">
-                    <p>&copy; 2026 S.P. ENTERPRISES. All rights reserved.</p>
+                    <p>&copy; 2026 YSP SPARES. All rights reserved.</p>
                     <div className="flex gap-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-black">Privacy Policy</a>
                         <a href="#" className="hover:text-black">Terms of Service</a>

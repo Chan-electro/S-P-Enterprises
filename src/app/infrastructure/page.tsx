@@ -4,7 +4,7 @@ import { Settings, CheckCircle2, Factory } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Infrastructure & Manufacturing | S.P. Enterprises',
+    title: 'Infrastructure & Manufacturing | YSP Spares',
     description: 'State-of-the-art manufacturing facility with CNC Turning, Gear Hobbing, and Induction Hardening capabilities.',
 };
 
@@ -76,7 +76,7 @@ export default function InfrastructurePage() {
                     <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
                             <h2 className="text-3xl font-display font-black uppercase mb-4">Quality Assurance</h2>
-                            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                            <p className="text-neutral-300 text-lg leading-relaxed mb-6">
                                 Quality is at the core of our manufacturing process. We maintain strict adherence to customer samples and drawings, ensuring every component meets the highest standards.
                             </p>
                             <ul className="space-y-3">

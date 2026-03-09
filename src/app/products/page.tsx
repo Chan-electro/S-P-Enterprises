@@ -1,20 +1,22 @@
 
-"use client";
-
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { CheckCircle2, Download, Cog, Layers, Truck } from "lucide-react";
+import { CheckCircle2, Download, Cog, Truck } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Products & Services | YSP Spares',
+    description: 'Genuine excavator spares & custom gears. Compatible with CAT, Komatsu, Hitachi, Volvo & Hyundai.',
+};
 
 export default function ProductsPage() {
     return (
         <div className="min-h-screen bg-white pt-24 pb-12">
             {/* Header */}
             <div className="container mx-auto px-6 mb-16">
-                <div className="max-w-4xl">
+                <div className="max-w-4xl mx-auto text-center">
                     <Badge variant="outline" className="mb-4 border-primary text-primary font-bold uppercase tracking-widest">SPE &amp; ASTECH</Badge>
                     <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-black uppercase mb-4">Products &amp; Services</h1>
                     <p className="text-xl text-neutral-600">
@@ -79,7 +81,7 @@ export default function ProductsPage() {
                                 <h3 className="text-xl font-bold mb-6 text-primary border-b border-neutral-700 pb-2">Complete Range</h3>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     {["Track Roller / Bottom Roller", "Top Roller / Carrier Roller", "Sprocket Segment", "Front Idler Assembly", "Track Chain / Link Assembly", "Track Shoe Assembly", "Track Bolts & Nuts", "Pins & Bushings", "Recoil Spring", "Swing Bearing Circle"].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
+                                        <li key={i} className="flex items-center gap-2 text-sm text-neutral-300">
                                             <div className="w-1.5 h-1.5 rounded-full bg-primary" /> {item}
                                         </li>
                                     ))}
@@ -91,7 +93,7 @@ export default function ProductsPage() {
                                 <div className="absolute inset-0 bg-black/60 flex items-center justify-center p-8">
                                     <div className="text-center">
                                         <h3 className="text-2xl font-bold text-white mb-2">Compatible Brands</h3>
-                                        <p className="text-gray-300">Komatsu • Hitachi • Kobelco • Caterpillar • Hyundai • Volvo</p>
+                                        <p className="text-neutral-300">Komatsu • Hitachi • Kobelco • Caterpillar • Hyundai • Volvo</p>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +107,7 @@ export default function ProductsPage() {
                                 <div className="flex-1">
                                     <h2 className="text-2xl sm:text-3xl font-display font-black text-black uppercase mb-4">SPE Genuine Spares</h2>
                                     <p className="text-neutral-600 mb-6 text-lg">
-                                        We are specialized in importing and stocking genuine spares for heavy earthmoving equipment under the name M/s SP Enterprises.
+                                        We are specialized in importing and stocking genuine spares for heavy earthmoving equipment under the name M/s YSP Spares.
                                     </p>
                                     <ul className="space-y-2 mb-8">
                                         <li className="flex items-center gap-2 font-bold"><CheckCircle2 className="text-primary w-5 h-5" /> Complete Undercarriage Systems</li>

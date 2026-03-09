@@ -7,8 +7,8 @@ import { MapPin, Phone, Mail, User } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Get a Quote for Earth Moving Spares | S.P. Enterprises Bangalore',
-    description: 'Contact S.P. Enterprises and A.S. Tech Industries for quotes, custom manufacturing, and distribution inquiries. Locations in Bangalore, Salem, Coimbatore, Cochin, and Hospet.',
+    title: 'Get a Quote for Earth Moving Spares | YSP Spares Bangalore',
+    description: 'Contact YSP Spares and A.S. Tech Industries for quotes, custom manufacturing, and distribution inquiries. Locations in Bangalore, Salem, Coimbatore, Cochin, and Hospet.',
 };
 
 export default function ContactPage() {
@@ -53,7 +53,7 @@ export default function ContactPage() {
                                         <MapPin className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <span className="block font-bold text-black text-lg">S.P. ENTERPRISES</span>
+                                        <span className="block font-bold text-black text-lg">YSP SPARES</span>
                                         <span className="text-neutral-500 block mb-2">Sales & Distribution</span>
                                         <span className="text-neutral-600 block">
                                             #66/2, 5th Cross, Sreematha Badavane<br />
@@ -138,22 +138,22 @@ export default function ContactPage() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <h4 className="font-bold text-lg">Salem</h4>
-                                    <p className="text-gray-400 text-sm">#511/169, Angammal Colony, Salem-636009</p>
+                                    <p className="text-neutral-400 text-sm">#511/169, Angammal Colony, Salem-636009</p>
                                     <p className="text-primary text-sm mt-1">Manju: +91 9597214702</p>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-lg">Coimbatore</h4>
-                                    <p className="text-gray-400 text-sm">#1/468, Ganesha Nagar, Malumichampatti</p>
+                                    <p className="text-neutral-400 text-sm">#1/468, Ganesha Nagar, Malumichampatti</p>
                                     <p className="text-primary text-sm mt-1">Pradeep: +91 9626304702</p>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-lg">Cochin</h4>
-                                    <p className="text-gray-400 text-sm">#16-766, MC Road, Perumbavoor</p>
+                                    <p className="text-neutral-400 text-sm">#16-766, MC Road, Perumbavoor</p>
                                     <p className="text-primary text-sm mt-1">Manjunath: +91 9567333350</p>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-lg">Hospet</h4>
-                                    <p className="text-gray-400 text-sm">#509/4, Vani Nilaya, Patel Nagar</p>
+                                    <p className="text-neutral-400 text-sm">#509/4, Vani Nilaya, Patel Nagar</p>
                                     <p className="text-primary text-sm mt-1">Mansoor: +91 9902012238</p>
                                 </div>
                             </div>
