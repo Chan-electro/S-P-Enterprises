@@ -15,7 +15,7 @@ const fontDisplay = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "S.P. Enterprises | Heavy Earth Moving Equipment & Spares",
+  title: "YSP Spares | Heavy Earth Moving Equipment & Spares",
   description: "Specialized in precision components manufacture, genuine spares for heavy earthmoving equipment, and undercarriage products. Serving the industry since 1995.",
 };
 

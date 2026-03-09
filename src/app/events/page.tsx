@@ -4,7 +4,7 @@ import { Calendar, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Events & Exhibitions | S.P. Enterprises',
+    title: 'Events & Exhibitions | YSP Spares',
     description: 'Our participation in industry trade shows, equipment exhibitions, and business expos.',
 };
 
