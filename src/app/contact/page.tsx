@@ -7,19 +7,38 @@ import { MapPin, Phone, Mail, User } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Get a Quote for Earth Moving Spares | YSP Spares Bangalore',
-    description: 'Contact YSP Spares and A.S. Tech Industries for quotes, custom manufacturing, and distribution inquiries. Locations in Bangalore, Salem, Coimbatore, Cochin, and Hospet.',
+    title: 'Contact YSP Spares Bangalore | Get a Free Quote for Excavator Spare Parts',
+    description: 'Contact YSP Spares Bangalore for excavator spare parts quotes, custom gear manufacturing, and distribution inquiries. Offices in Bangalore, Salem, Coimbatore, Cochin & Hospet. Call +91 9902012222.',
+    alternates: { canonical: 'https://www.yspspares.com/contact' },
+    openGraph: {
+        title: 'Contact YSP Spares Bangalore | Free Quote for Excavator Parts',
+        description: 'Get a free quote for excavator spare parts and custom precision components. Pan-India distribution from Bangalore. Call +91 9902012222.',
+        url: 'https://www.yspspares.com/contact',
+    },
+};
+
+const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.yspspares.com" },
+        { "@type": "ListItem", position: 2, name: "Contact Us", item: "https://www.yspspares.com/contact" },
+    ],
 };
 
 export default function ContactPage() {
     return (
         <div className="min-h-screen pt-24 pb-12 bg-neutral-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+            />
             <div className="container mx-auto px-6">
 
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-black mb-6 uppercase">Let's Build Together</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-black mb-6 uppercase">Get a Free Quote — YSP Spares Bangalore</h1>
                     <p className="text-neutral-500 text-lg">
-                        Reach out for quotes, custom orders, or distribution inquiries. Our team is ready to assist you.
+                        Contact us for excavator spare parts quotes, custom gear manufacturing, or distribution inquiries. Offices in Bangalore, Salem, Coimbatore, Cochin &amp; Hospet.
                     </p>
                 </div>
 

@@ -4,8 +4,14 @@ import { Settings, CheckCircle2, Factory } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Infrastructure & Manufacturing | YSP Spares',
-    description: 'State-of-the-art manufacturing facility with CNC Turning, Gear Hobbing, and Induction Hardening capabilities.',
+    title: 'CNC Machining & Gear Manufacturing Facility Bangalore | YSP Spares',
+    description: 'YSP Spares Bangalore manufacturing facility features CNC Turning Centers, Gear Hobbing (1-10 module), Induction Hardening (up to 2.5m), and CNC Machining with <10 micron accuracy. Custom components to drawing.',
+    alternates: { canonical: 'https://www.yspspares.com/infrastructure' },
+    openGraph: {
+        title: 'CNC Machining & Gear Manufacturing Bangalore | YSP Spares Infrastructure',
+        description: 'State-of-the-art manufacturing with CNC Turning, Gear Hobbing (1-10 module), Gear Shaping (up to 600mm dia), and Induction Hardening. Precision under 10 microns.',
+        url: 'https://www.yspspares.com/infrastructure',
+    },
 };
 
 const capabilities = [
@@ -41,9 +47,35 @@ const capabilities = [
     }
 ];
 
+const infraSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.yspspares.com" },
+                { "@type": "ListItem", position: 2, name: "Infrastructure", item: "https://www.yspspares.com/infrastructure" },
+            ],
+        },
+        {
+            "@type": "Service",
+            name: "CNC Precision Components Manufacturing Bangalore",
+            serviceType: "Precision Engineering & CNC Machining",
+            provider: { "@id": "https://www.yspspares.com/#organization" },
+            areaServed: { "@type": "Country", name: "India" },
+            description:
+                "A.S. Tech Industries (Bangalore) provides CNC Turning, CNC Machining (accuracy <10 microns), Gear Hobbing (1-10 module), Gear Shaping (up to 600mm diameter), Gear Grinding, and Induction Hardening (up to 2.5m) for custom heavy equipment components.",
+        },
+    ],
+};
+
 export default function InfrastructurePage() {
     return (
         <div className="min-h-screen bg-white pt-24 pb-12">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(infraSchema) }}
+            />
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <Badge variant="outline" className="mb-4 border-primary text-primary font-bold uppercase tracking-widest">State-of-the-Art Facility</Badge>

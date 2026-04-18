@@ -4,13 +4,32 @@ import { Users, Hammer, Globe, Trophy, Building2, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: '30+ Years of Manufacturing Excellence | YSP Spares',
-    description: 'Established in 1995 - precision components manufacturer and heavy earthmoving equipment spares supplier in Bangalore.',
+    title: 'About YSP Spares Bangalore | 30+ Years Precision Manufacturing Since 1995',
+    description: 'YSP Spares (S.P. Enterprises) is a Bangalore-based precision components manufacturer and genuine spare parts supplier for heavy earthmoving equipment. Founded by Mr. H.S. Shivanandaswamy in 1995.',
+    alternates: { canonical: 'https://www.yspspares.com/about' },
+    openGraph: {
+        title: 'About YSP Spares Bangalore | 30+ Years Since 1995',
+        description: 'Precision components manufacturer & genuine earthmoving equipment spare parts supplier in Bangalore since 1995. CNC accuracy under 10 microns.',
+        url: 'https://www.yspspares.com/about',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.yspspares.com" },
+        { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.yspspares.com/about" },
+    ],
 };
 
 export default function AboutPage() {
     return (
         <div className="bg-white min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             {/* Hero */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden pt-20">
                 <img src="/images/factory-floor.png" alt="YSP Spares Factory" className="absolute inset-0 w-full h-full object-cover" />

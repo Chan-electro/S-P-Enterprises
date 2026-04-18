@@ -3,8 +3,14 @@ import { Badge } from "@/components/ui/badge";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Gallery | YSP Spares',
-    description: 'Showcasing our precision manufacturing facility, machinery, and finished components.',
+    title: 'Manufacturing Facility Gallery | YSP Spares Bangalore — CNC & Gear Machining',
+    description: 'Photo gallery of YSP Spares Bangalore manufacturing facility including CNC machining centers, gear hobbing machines, induction hardening equipment, and finished precision components.',
+    alternates: { canonical: 'https://www.yspspares.com/gallery' },
+    openGraph: {
+        title: 'Manufacturing Gallery | YSP Spares Bangalore',
+        description: 'Inside our Bangalore precision manufacturing facility — CNC turning, gear hobbing, induction hardening, and quality control.',
+        url: 'https://www.yspspares.com/gallery',
+    },
 };
 
 export default function GalleryPage() {

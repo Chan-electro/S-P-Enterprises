@@ -4,8 +4,14 @@ import { Calendar, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Events & Exhibitions | YSP Spares',
-    description: 'Our participation in industry trade shows, equipment exhibitions, and business expos.',
+    title: 'Trade Shows & Exhibitions | YSP Spares Bangalore — EXCON 2026',
+    description: 'YSP Spares participates in major heavy equipment trade shows including EXCON and Bauma Conexpo India. Visit us at BIEC Bangalore, December 2026.',
+    alternates: { canonical: 'https://www.yspspares.com/events' },
+    openGraph: {
+        title: 'Events & Exhibitions | YSP Spares Bangalore',
+        description: 'Meet YSP Spares at EXCON 2026 (Dec 12-16, BIEC Bangalore) and other heavy equipment industry exhibitions across India.',
+        url: 'https://www.yspspares.com/events',
+    },
 };
 
 export default function EventsPage() {
