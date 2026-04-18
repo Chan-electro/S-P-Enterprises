@@ -10,8 +10,8 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center font-black text-black text-sm">YSP</div>
-                            <span className="font-display font-black text-xl uppercase tracking-tight">YSP<span className="text-primary"> SPARES</span></span>
+                            <img src="/ysp-logo.png" alt="YSP Logo" className="h-[52px] w-auto object-contain" />
+                            <span className="font-poppins font-extrabold text-xl uppercase tracking-tight text-black">YSP SPARES</span>
                         </div>
                         <p className="text-neutral-500 max-w-xs leading-relaxed">
                             Serving the industry since 1995 with precision components and genuine spares for heavy earthmoving equipment.

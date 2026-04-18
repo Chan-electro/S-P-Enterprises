@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google"; // Outfit for headings, Inter for body
+import { Inter, Outfit, Poppins } from "next/font/google"; // Outfit for headings, Inter for body
 import "./globals.css";
 import ClientLayout from "@/components/client-layout";
 import { cn } from "@/lib/utils";
@@ -11,6 +11,12 @@ const fontSans = Inter({
 
 const fontDisplay = Outfit({
   variable: "--font-display",
+  subsets: ["latin"],
+});
+
+const fontPoppins = Poppins({
+  weight: ['800'],
+  variable: "--font-poppins",
   subsets: ["latin"],
 });
 
@@ -29,7 +35,8 @@ export default function RootLayout({
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
         fontSans.variable,
-        fontDisplay.variable
+        fontDisplay.variable,
+        fontPoppins.variable
       )}>
         <ClientLayout>
           {children}

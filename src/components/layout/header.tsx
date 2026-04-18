@@ -41,11 +41,9 @@ export default function Header() {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center font-black text-black text-sm tracking-tighter shadow-lg group-hover:scale-105 transition-transform">
-                        YSP
-                    </div>
-                    <span className={`font-display font-black text-lg sm:text-2xl tracking-tight uppercase transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>
-                        YSP<span className="text-primary"> SPARES</span>
+                    <img src="/ysp-logo.png" alt="YSP Logo" className="h-[52px] w-auto object-contain transition-transform group-hover:scale-105" />
+                    <span className="font-poppins font-extrabold text-lg sm:text-2xl tracking-tight uppercase transition-colors duration-300 text-black">
+                        YSP SPARES
                     </span>
                 </Link>
 
